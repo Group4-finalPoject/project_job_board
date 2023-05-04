@@ -1,17 +1,75 @@
-body {
-  font-family: 'Rubik', sans-serif;
+html{
+    background-color: black;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
+ body {
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+  border: none;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#root{
+  width:50%;
+  height: 200px;
+}
 h6 {
   font-family: 'Rubik Mono One', sans-serif;
 }
-
 .small {
   font-weight: 300;
   font-style: italic;
+}
+.backgroundBody{
+  height: 50%;
+  width: 100%;
+}
+.card{
+border:none;
+}
+
+.mainCard1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+.mainCard2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+.main1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnCard{
+  border: none;
+  margin: 15px;
+}
+.loginBtn{
+background-color: green;
+margin-right: 10px;
+
+}
+.signUpBtn{
+  background-color: green;
+  margin-left: 10px;
+}
+/* media queries */
+
+
+/* cool stuff */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
 }

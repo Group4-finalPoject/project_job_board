@@ -1,9 +1,10 @@
 import React from 'react';
-import HelloReact from './components/HelloReact';
+import LogOrSignUp from './components/logOrSignUp';
 
 
 function App() {
-  return <HelloReact />;
+
+  return <LogOrSignUp />;
 
 }
 
