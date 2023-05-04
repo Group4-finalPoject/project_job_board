@@ -33,6 +33,10 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+.btnCard{
+  border: none;
+  margin: 15px;
+}
 .loginBtn{
 background-color: green;
 }
