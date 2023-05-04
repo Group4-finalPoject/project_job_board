@@ -5,22 +5,23 @@ import Card from 'react-bootstrap/Card';
 
 
 
-function LogIn() {
+function SignUp() {
+  // const text = 'some text';
 
   return (
     <>
       <div className=''>
         <Card>
           <h1 className='mainCard2'>
-              Log in!
+              Sign up!
           </h1>
           <Card className='btnCard'>
               <section className='main1'>
                 <Button variant="success" className='loginBtn' >
-                  Log in
+                  assign
                 </Button>{''}
                 <Button variant="success"className='signUpBtn' >
-                  Sign up
+                  assign
                 </Button>{''}
               </section>
             </Card>
@@ -31,4 +32,4 @@ function LogIn() {
   );
 }
 
-export default LogIn;
+export default SignUp;

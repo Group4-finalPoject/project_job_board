@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import LogIn from './logIn'
-import SignUp from './signIn';
+import SignUp from './signup';
 
 
 function LogOrSignUp() {
@@ -17,12 +17,12 @@ function LogOrSignUp() {
       <div className='backgroundBody'>
 
         {showLogin ?
-        (<LogIn/>) :
+        (<LogIn onClose={() => setShowLogin(false)}/>) :
         showSignup ?
-        (<SignUp/>) :       
-        (<div className='menu'>
+        (<SignUp onClose={() => setShowSignup(false)}/>) :       
+        (<div className=''>
           <Card>
-            <h1 className='mainCard'>
+            <h1 className='mainCard1'>
                 Welcome!
             </h1>
             <Card className='btnCard'>
@@ -31,7 +31,7 @@ function LogOrSignUp() {
                   Log in
                 </Button>{''}
                 <Button variant="success"className='signUpBtn' onClick={() => setShowSignup(true)}>
-                  Sign in
+                  Sign up
                 </Button>{''}
               </section>
             </Card>

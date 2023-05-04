@@ -12,6 +12,7 @@ html{
 }
 #root{
   width:50%;
+  height: 200px;
 }
 h6 {
   font-family: 'Rubik Mono One', sans-serif;
@@ -20,15 +21,22 @@ h6 {
   font-weight: 300;
   font-style: italic;
 }
-/* .backgroundBody{
+.backgroundBody{
   height: 50%;
   width: 100%;
-} */
+}
 .card{
 border:none;
 }
 
-.mainCard {
+.mainCard1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+.mainCard2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,8 +54,22 @@ border:none;
 }
 .loginBtn{
 background-color: green;
+margin-right: 10px;
+
 }
 .signUpBtn{
   background-color: green;
+  margin-left: 10px;
+}
+/* media queries */
 
+
+/* cool stuff */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
 }
