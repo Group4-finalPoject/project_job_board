@@ -19,7 +19,7 @@ const jobSchema = new mongoose.Schema({
         lowercase: true
     },
     salary: {
-        type: NumberDecimal,
+        type: Number,
         required: true
     }
 });
