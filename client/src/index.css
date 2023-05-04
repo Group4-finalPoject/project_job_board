@@ -1,19 +1,18 @@
-
-html, body {
+html{
+    background-color: black;
+}
+ body {
   font-family: 'Rubik', sans-serif;
+  height: 100vh;
+  border: none;
   background-color: black;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100%;
-
+  justify-content: center;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
+#root{
+  width:50%;
+}
 h6 {
   font-family: 'Rubik Mono One', sans-serif;
 }
@@ -21,12 +20,20 @@ h6 {
   font-weight: 300;
   font-style: italic;
 }
-.background{
+/* .backgroundBody{
+  height: 50%;
+  width: 100%;
+} */
+.card{
+border:none;
 }
+
 .mainCard {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 200px;
+  width: 100%;
 }
 .main1{
   display: flex;

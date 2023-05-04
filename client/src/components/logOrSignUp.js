@@ -3,37 +3,40 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import LogIn from './logIn'
-import SignIn from './signIn';
+import SignUp from './signIn';
 
 
 function LogOrSignUp() {
   const [showLogin, setShowLogin] = useState(false);
-  const [showSignin, setShowSignin] = useState(false);
+  const [showSignup, setShowSignup] = useState(false);
 
   
 
   return (
     <>
-      <div className='background'>
+      <div className='backgroundBody'>
+
         {showLogin ?
         (<LogIn/>) :
-        showSignin ?
-        (<SignIn/>) :       
-        (<Card>
-          <h1 className='mainCard'>
-              Welcome!
-          </h1>
-          <Card className='btnCard'>
-            <section className='main1'>
-              <Button variant="success" className='loginBtn' onClick={() => setShowLogin(true)}>
-                Log in
-              </Button>{''}
-              <Button variant="success"className='signUpBtn' onClick={() => setShowSignin(true)}>
-                Sign in
-              </Button>{''}
-            </section>
+        showSignup ?
+        (<SignUp/>) :       
+        (<div className='menu'>
+          <Card>
+            <h1 className='mainCard'>
+                Welcome!
+            </h1>
+            <Card className='btnCard'>
+              <section className='main1'>
+                <Button variant="success" className='loginBtn' onClick={() => setShowLogin(true)}>
+                  Log in
+                </Button>{''}
+                <Button variant="success"className='signUpBtn' onClick={() => setShowSignup(true)}>
+                  Sign in
+                </Button>{''}
+              </section>
+            </Card>
           </Card>
-        </Card>)}
+        </div>)}
       </div>
     </>
   );

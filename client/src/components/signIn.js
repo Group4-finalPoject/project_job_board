@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 
 
 
-function SignIn() {
+function SignUp() {
   // const text = 'some text';
 
   return (
@@ -13,7 +13,7 @@ function SignIn() {
       <div className='background'>
         <Card>
           <h1 className='mainCard'>
-              Sign in!
+              Sign up!
           </h1>
         </Card>
       </div>
@@ -21,4 +21,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default SignUp;
