@@ -7,7 +7,20 @@ function LogOrSignUp() {
   return (
     <>
       <div className='background'>
-        <Card></Card>
+        <Card>
+          <h1 className='mainCard'>
+              Welcome!
+          </h1>
+          
+          <Card>
+          <section className='main1'>
+          <Button variant="success" className='loginBtn'>Log in</Button>{''}
+          <Button variant="success"className='signUpBtn'>Sign</Button>{''}
+          </section>
+          </Card>
+
+
+        </Card>
       </div>
     </>
   );

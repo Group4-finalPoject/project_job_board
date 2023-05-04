@@ -3,6 +3,7 @@ import LogOrSignUp from './components/logOrSignUp';
 
 
 function App() {
+
   return <LogOrSignUp />;
 
 }

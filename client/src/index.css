@@ -1,6 +1,11 @@
-body {
+
+html, body {
   font-family: 'Rubik', sans-serif;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
 }
 
@@ -17,4 +22,21 @@ h6 {
   font-style: italic;
 }
 .background{
+}
+.mainCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginBtn{
+background-color: green;
+}
+.signUpBtn{
+  background-color: green;
+
 }
