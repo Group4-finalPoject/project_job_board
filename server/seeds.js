@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Job = require('./models/job');
 
 mongoose
-    .connect('mongodb:localhost:27017/test', {
+    .connect('mongodb:localhost:27017', {
 useNewUrlParser: true, useUnifiedTopolgy: true  })
     .then(() => {
         console.log('MONGODB CONNECTION OPEN!');
@@ -56,7 +56,7 @@ useNewUrlParser: true, useUnifiedTopolgy: true  })
         }
     ];
 
-const seddDB = async () => {
+const seedDB = async () => {
     await Job.deleteMany({});
     await Job.insertMany(seedJobs);
 };
