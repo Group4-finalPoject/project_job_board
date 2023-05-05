@@ -12,10 +12,20 @@ const typeDefs = gql`
     user: User
   }
 
+  type Job {
+    id: ID!
+    name: String!
+    company: String!
+    description: String!
+    category: String
+    salary: Int!
+  }
+
   type Query {
     users: [User]
     user(username: String!): User
     me: User
+    jobs: [Job!]!
   }
 
   type Mutation {
