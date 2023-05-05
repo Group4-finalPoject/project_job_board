@@ -1,7 +1,18 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useNavigate } from 'react-router-dom';
+
 
 function SignUpForm() {
+
+  const navigate = useNavigate();
+
+
+
+  const handleSignedUp = () => {
+    navigate('/Home')
+  }
+
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -23,8 +34,8 @@ function SignUpForm() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Subscribe to email updates?" />
       </Form.Group>
-      <Button variant="primary" type="submit">
-        Login
+      <Button variant="primary" type="submit" onClick={() => handleSignedUp()}>
+        Register
       </Button>
     </Form>
   );
