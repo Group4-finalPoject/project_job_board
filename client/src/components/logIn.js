@@ -1,7 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import LoginForm from './forms/loginForm';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -14,13 +15,11 @@ function LogIn() {
           <h1 className='mainCard2'>
               Log in!
           </h1>
+          <LoginForm/>
           <Card className='btnCard'>
               <section className='main1'>
-                <Button variant="success" className='loginBtn' >
-                  Log in
-                </Button>{''}
                 <Button variant="success"className='signUpBtn' >
-                  Sign up
+                  Go Premium !
                 </Button>{''}
               </section>
             </Card>
