@@ -1,3 +1,4 @@
+const { Decimal128 } = require('bson');
 const mongoose = require('mongoose');
 
 const jobSchema = new mongoose.Schema({
@@ -7,7 +8,7 @@ const jobSchema = new mongoose.Schema({
     },
     company: {
         type: String,
-        required: true
+        required: false
     },
     description: {
         type: String,
@@ -26,4 +27,4 @@ const jobSchema = new mongoose.Schema({
 
 const Job = mongoose.model('Job', jobSchema);
 
-module.expoprts = Job;
+module.exports = Job;
