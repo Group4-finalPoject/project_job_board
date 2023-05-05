@@ -12,7 +12,7 @@ html{
 }
 #root{
   width:50%;
-  height: 200px;
+  height: 550px;
 }
 h6 {
   font-family: 'Rubik Mono One', sans-serif;
@@ -62,7 +62,12 @@ margin-right: 10px;
   margin-left: 10px;
 }
 /* media queries */
-
+@media (min-width: 100px) and (max-width: 1000px) {
+  #root{
+    width: auto;
+    height: 200px;
+  }
+}
 
 /* cool stuff */
 .fade-in {
