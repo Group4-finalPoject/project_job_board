@@ -22,7 +22,7 @@ function LoginForm() {
   return (
 
     <div className='test'>
-     <Form>
+     <Form className='loginForm'>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -35,7 +35,7 @@ function LoginForm() {
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Remember me next time Bae." />
+          <Form.Check type="checkbox" label="Remember me." />
         </Form.Group>
         <Button variant="primary" type="submit" onClick={() => handleLogIn()}>
           Login

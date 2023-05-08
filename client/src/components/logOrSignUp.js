@@ -9,13 +9,18 @@ import { useNavigate } from 'react-router-dom';
 function LogOrSignUp() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
+ 
+
+
   const navigate = useNavigate();
-
-
-
-  const handleLogIn = () => {
+  const handleLogInScreen = () => {
+    navigate('/login')
+    setShowLogin(true)
   }
-  
+   const handleSignUpScreen = () => {
+    navigate('/signup')
+    setShowSignup(true)
+  }
 
   return (
     < >
@@ -33,10 +38,10 @@ function LogOrSignUp() {
             <p>Let's Find that Dream job of yours!</p>
             <Card className='btnCard'>
               <section className='main1'>
-                <Button variant="success" className='loginBtn' onClick={() => setShowLogin(true)}>
+                <Button variant="success" className='loginBtn' onClick={() => handleLogInScreen() }>
                   Log in
                 </Button>{''}
-                <Button variant="success"className='signUpBtn' onClick={() => setShowSignup(true)}>
+                <Button variant="success"className='signUpBtn' onClick={() =>  handleSignUpScreen()}>
                   Sign up
                 </Button>{''}
               </section>

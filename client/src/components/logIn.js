@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 function LogIn() {
+  const navigate = useNavigate();
 
   return (
     <>
@@ -19,7 +20,7 @@ function LogIn() {
           <Card className='btnCard'>
               <section className='main1'>
                 <Button variant="success"className='signUpBtn' >
-                  Go Premium !
+                  Go Premium
                 </Button>{''}
               </section>
             </Card>
