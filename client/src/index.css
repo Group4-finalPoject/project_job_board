@@ -69,6 +69,7 @@ border:none;
   align-items: center;
   height: 200px;
   width: 100%;
+  flex-wrap: wrap;
 }
 .mainCard2 {
   display: flex;
@@ -103,6 +104,10 @@ margin: 10px;
 
 
 /* HOME PAGE */
+.homeBody{
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
 /* navbar rows btns */
 @media screen and (max-width: 992px) {
   .navbar-nav{
@@ -124,6 +129,12 @@ margin: 10px;
  .d-flex {
   justify-content: center !important;
   }
+ .mainCard1{
+  display: flex;
+  justify-content: center;
+ }
+
+
 }
 .d-flex {
   display: flex;
