@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 import LogIn from './logIn'
 import SignUp from './signup';
 import { useNavigate } from 'react-router-dom';
+import { motion } from "framer-motion"
 
 function LogOrSignUp() {
   const [showLogin, setShowLogin] = useState(false);
@@ -33,15 +34,15 @@ function LogOrSignUp() {
         (<div className='welcomeCard'>
           <Card className='welcomeCardStyle'>
             <h1 className='mainCard1'>
-                Welcome!
+                Welcome to GitJobs,
             </h1>
             <p>Let's Find that Dream job of yours!</p>
             <Card className='btnCard'>
               <section className='main1'>
-                <Button variant="success" className='loginBtn' onClick={() => handleLogInScreen() }>
+                <Button variant="dark" className='loginBtn' onClick={() => handleLogInScreen() }>
                   Log in
                 </Button>{''}
-                <Button variant="success"className='signUpBtn' onClick={() =>  handleSignUpScreen()}>
+                <Button variant="dark"className='signUpBtn' onClick={() =>  handleSignUpScreen()}>
                   Sign up
                 </Button>{''}
               </section>

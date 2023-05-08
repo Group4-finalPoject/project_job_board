@@ -19,7 +19,7 @@ function LogIn() {
           <LoginForm/>
           <Card className='btnCard'>
               <section className='main1'>
-                <Button variant="success"className='signUpBtn' >
+                <Button variant="dark"className='signUpBtn' >
                   Go Premium
                 </Button>{''}
               </section>

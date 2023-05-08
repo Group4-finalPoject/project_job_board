@@ -74,7 +74,7 @@ border:none;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 80px;
   width: 100%;
 }
 .main1{
@@ -100,6 +100,45 @@ margin: 10px;
   /* align-items: center; */
   justify-content: center;
 }
+
+
+/* HOME PAGE */
+/* navbar rows btns */
+@media screen and (max-width: 992px) {
+  .navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .TESTER{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap !important;
+    flex-direction: column;
+
+  }
+ .nav-link{
+  margin: 5px;
+
+ }
+ .d-flex {
+  justify-content: center !important;
+  }
+}
+.d-flex {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+}
+.navbar-brand{
+  font-size: 25px;
+
+}
+.nav-link{
+  font-size: 15px;
+}
+
+
 
 /* cool stuff */
 .fade-in {
