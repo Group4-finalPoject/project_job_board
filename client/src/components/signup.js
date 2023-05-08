@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import SignUpForm from './forms/signUpForm';
 
 
 
@@ -15,6 +16,7 @@ function SignUp() {
           <h1 className='mainCard2'>
               Sign up!
           </h1>
+          <SignUpForm/>
           <Card className='btnCard'>
               <section className='main1'>
                 <Button variant="success" className='loginBtn' >
