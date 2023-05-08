@@ -18,15 +18,15 @@ function LogOrSignUp() {
   
 
   return (
-    <>
+    < >
       <div className='backgroundBody'>
 
         {showLogin ?
         (<LogIn onClose={() => setShowLogin(false)}/>) :
         showSignup ?
         (<SignUp onClose={() => setShowSignup(false)}/>) :       
-        (<div className=''>
-          <Card>
+        (<div className='welcomeCard'>
+          <Card className='welcomeCardStyle'>
             <h1 className='mainCard1'>
                 Welcome!
             </h1>

@@ -11,8 +11,8 @@ function SignUp() {
 
   return (
     <>
-      <div className=''>
-        <Card>
+      <div className='signupCardBody'>
+        <Card className='signupCardStyles'>
           <h1 className='mainCard2'>
               Sign up!
           </h1>

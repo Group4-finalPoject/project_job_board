@@ -10,8 +10,8 @@ function LogIn() {
 
   return (
     <>
-      <div className=''>
-        <Card>
+      <div className='loginCardBody'>
+        <Card className='loginCardStyles'>
           <h1 className='mainCard2'>
               Log in!
           </h1>

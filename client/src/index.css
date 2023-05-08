@@ -1,19 +1,45 @@
 html{
     background-color: black;
 }
+#root{
+height: 100vh;
+width: 100%;
+}
+.backgroundBody{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
  body {
   font-family: 'Rubik', sans-serif;
   height: 100vh;
   border: none;
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#root{
-  width:50%;
-  height: 550px;
+
+/* WELCOME,LOGIN, SIGNUP SCREEN STYLES */
+.welcomeCard, .loginCardBody, .signupCardBody{
+width: 40%;
+box-shadow:  5px 5px 30px rgb(86, 86, 86);
+background: none;
+border-radius: 20px;
+
+
+
 }
+.welcomeCardStyle, .loginCardStyles, .signupCardStyles{
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+
+}
+
+/*  */
 h6 {
   font-family: 'Rubik Mono One', sans-serif;
 }
@@ -21,10 +47,7 @@ h6 {
   font-weight: 300;
   font-style: italic;
 }
-.backgroundBody{
-  height: 50%;
-  width: 100%;
-}
+
 .card{
 border:none;
 }
