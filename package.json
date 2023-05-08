@@ -17,7 +17,11 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
+<<<<<<< HEAD
     "dotenv": "^16.0.3",
+=======
+    "mongoose": "^7.1.0",
+>>>>>>> seed3
     "react-bootstrap": "^2.7.4"
   }
 }
