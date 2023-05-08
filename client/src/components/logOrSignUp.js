@@ -5,38 +5,44 @@ import Card from 'react-bootstrap/Card';
 import LogIn from './logIn'
 import SignUp from './signup';
 import { useNavigate } from 'react-router-dom';
+import { motion } from "framer-motion"
 
 function LogOrSignUp() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
+ 
+
+
   const navigate = useNavigate();
-
-
-
-  const handleLogIn = () => {
+  const handleLogInScreen = () => {
+    navigate('/login')
+    setShowLogin(true)
   }
-  
+   const handleSignUpScreen = () => {
+    navigate('/signup')
+    setShowSignup(true)
+  }
 
   return (
-    <>
+    < >
       <div className='backgroundBody'>
 
         {showLogin ?
         (<LogIn onClose={() => setShowLogin(false)}/>) :
         showSignup ?
         (<SignUp onClose={() => setShowSignup(false)}/>) :       
-        (<div className=''>
-          <Card>
+        (<div className='welcomeCard'>
+          <Card className='welcomeCardStyle'>
             <h1 className='mainCard1'>
-                Welcome!
+                Welcome to GitJobs,
             </h1>
             <p>Let's Find that Dream job of yours!</p>
             <Card className='btnCard'>
               <section className='main1'>
-                <Button variant="success" className='loginBtn' onClick={() => setShowLogin(true)}>
+                <Button variant="dark" className='loginBtn' onClick={() => handleLogInScreen() }>
                   Log in
                 </Button>{''}
-                <Button variant="success"className='signUpBtn' onClick={() => setShowSignup(true)}>
+                <Button variant="dark"className='signUpBtn' onClick={() =>  handleSignUpScreen()}>
                   Sign up
                 </Button>{''}
               </section>

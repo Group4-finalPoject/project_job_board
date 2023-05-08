@@ -7,7 +7,11 @@ function Home() {
         <>
             <div>   
                 <Navigation/>
+                <div className='homeBody'>
                 <h1>HOME</h1>
+
+
+                </div>
             </div>
         </>
     )

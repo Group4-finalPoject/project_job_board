@@ -1,19 +1,56 @@
+
 html{
     background-color: black;
 }
+#root{
+height: 100vh;
+width: 100%;
+}
+/* .backgroundBody{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
  body {
   font-family: 'Rubik', sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
   border: none;
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#root{
-  width:50%;
-  height: 550px;
+
+/* WELCOME,LOGIN, SIGNUP SCREEN STYLES */
+.welcomeCard, .loginCardBody, .signupCardBody{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+
 }
+.welcomeCardStyle, .loginCardStyles, .signupCardStyles{
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  width: 40%;
+  box-shadow:  5px 5px 30px rgb(86, 86, 86);
+  background: none;
+  border-radius: 20px;
+  height: auto;
+  padding: 10px;
+  }
+@media screen and (min-width: 425px) {
+  .welcomeCardStyle, .loginCardStyles, .signupCardStyles {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+/*  */
 h6 {
   font-family: 'Rubik Mono One', sans-serif;
 }
@@ -21,10 +58,7 @@ h6 {
   font-weight: 300;
   font-style: italic;
 }
-.backgroundBody{
-  height: 50%;
-  width: 100%;
-}
+
 .card{
 border:none;
 }
@@ -35,39 +69,87 @@ border:none;
   align-items: center;
   height: 200px;
   width: 100%;
+  flex-wrap: wrap;
 }
 .mainCard2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 80px;
   width: 100%;
 }
 .main1{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 5px;
+  
 }
 .btnCard{
   border: none;
   margin: 15px;
 }
-.loginBtn{
+.loginBtn, .signUpBtn{
 background-color: green;
-margin-right: 10px;
+margin: 10px;
+}
+
+.signUpForm, .loginForm{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+
+/* HOME PAGE */
+.homeBody{
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+/* navbar rows btns */
+@media screen and (max-width: 992px) {
+  .navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .TESTER{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap !important;
+    flex-direction: column;
+
+  }
+ .nav-link{
+  margin: 5px;
+
+ }
+ .d-flex {
+  justify-content: center !important;
+  }
+ .mainCard1{
+  display: flex;
+  justify-content: center;
+ }
+
 
 }
-.signUpBtn{
-  background-color: green;
-  margin-left: 10px;
+.d-flex {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
 }
-/* media queries */
-@media (min-width: 100px) and (max-width: 1000px) {
-  #root{
-    width: auto;
-    height: 200px;
-  }
+.navbar-brand{
+  font-size: 25px;
+
 }
+.nav-link{
+  font-size: 15px;
+}
+
+
 
 /* cool stuff */
 .fade-in {
@@ -78,3 +160,4 @@ margin-right: 10px;
 .fade-in.visible {
   opacity: 1;
 }
+
