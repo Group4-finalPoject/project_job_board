@@ -2,6 +2,55 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { gql } from '@apollo/client';
+import { useQuery } from '@apollo/client';
+
+
+const GET_APPLIED_JOBS = gql`
+  query GetUserAppliedJobs($userId: ID!) {
+    user(id: $userId) {
+      id
+      username
+      appliedJobs {
+        jobId
+        salary
+        name
+        company
+      }
+    }
+  }
+`;
+
+function AppliedJobs({ userId }) {
+  const { loading, error, data } = useQuery(GET_APPLIED_JOBS, {
+    variables: { userId },
+  });
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>Error: {error.message}</p>;
+  }
+
+  const { username, appliedJobs } = data.user;
+
+  return (
+    <NavDropdown title="Saved Applications" id="basic-nav-dropdown">
+      <NavDropdown.Item disabled>User: {username}</NavDropdown.Item>
+      {appliedJobs.map((job) => (
+        <NavDropdown.Item key={job.jobId}>
+          Name: {job.name}
+          <br />
+          Company: {job.company}
+          <br />
+          Salary: {job.salary}
+        </NavDropdown.Item>
+      ))}
+    </NavDropdown>
+  );
+}
 
 function Navigation() {
   return (
