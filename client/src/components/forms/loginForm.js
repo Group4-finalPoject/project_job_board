@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Home from '../Home/HomePage';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -22,8 +21,8 @@ function LoginForm() {
  
   return (
 
-    <div>
-     <Form>
+    <div className='test'>
+     <Form className='loginForm'>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -36,7 +35,7 @@ function LoginForm() {
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Remember me next time Bae." />
+          <Form.Check type="checkbox" label="Remember me" />
         </Form.Group>
         <Button variant="primary" type="submit" onClick={() => handleLogIn()}>
           Login

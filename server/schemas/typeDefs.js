@@ -5,6 +5,7 @@ const typeDefs = gql`
     _id: ID
     username: String
     email: String
+    appliedJobs: [AppliedJob!]!
   }
 
   type Auth {
@@ -43,6 +44,13 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
     applyToJob(jobId: ID!): Application
   
+  }
+
+  type AppliedJob {
+    jobId: ID!
+    salary: Float!
+    name: String!
+    company: String!
   }
 `;
 
