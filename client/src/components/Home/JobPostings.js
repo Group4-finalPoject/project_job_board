@@ -3,6 +3,7 @@ import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
+import JobApplication from './Application';
 
 
 
@@ -37,10 +38,10 @@ function JobPostings() {
                 </Card.Text>
 
                 <Card.Header className='detailsExpandButton'>
-                  <CustomToggle eventKey="1">Apply</CustomToggle>
+                  <CustomToggle eventKey="1" className='applybtn'>Apply</CustomToggle>
                   </Card.Header>
                   <Accordion.Collapse eventKey="1">
-                    <Card.Body>.....JOB DETAILS.....</Card.Body>
+                    <Card.Body><JobApplication /></Card.Body>
                   </Accordion.Collapse>
               </Card.Body>
             </Card>
@@ -59,10 +60,10 @@ function JobPostings() {
                 </Card.Text>
 
                 <Card.Header className='detailsExpandButton'>
-                  <CustomToggle eventKey="2">Apply</CustomToggle>
+                  <CustomToggle eventKey="2" >Apply</CustomToggle>
                   </Card.Header>
                   <Accordion.Collapse eventKey="2">
-                    <Card.Body>.....JOB DETAILS.....</Card.Body>
+                    <Card.Body></Card.Body>
                   </Accordion.Collapse>
               </Card.Body>
             </Card>
