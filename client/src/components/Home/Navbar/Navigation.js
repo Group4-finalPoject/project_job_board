@@ -5,9 +5,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navigation() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" expand="lg">
       <Container className='TESTER'>
-        <Navbar.Brand href="#home">GitJobs</Navbar.Brand>
+        <Navbar.Brand href="#home" className='gitJobs'>GitJobs</Navbar.Brand>
         <Navbar.Collapse className='d-flex ' id="basic-navbar-nav d-flex ">
           <Nav className="navBtns">
             <Nav.Link href="#home">Home</Nav.Link>
@@ -21,6 +21,10 @@ function Navigation() {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Premium Subscription
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Sign out
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
