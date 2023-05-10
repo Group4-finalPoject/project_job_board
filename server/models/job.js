@@ -2,6 +2,8 @@ const { Decimal128 } = require('bson');
 const mongoose = require('mongoose');
 
 const jobSchema = new mongoose.Schema({
+    
+    _id: mongoose.Types.ObjectId, // add an ID field to the schema
     name: {
         type: String,
         required: true

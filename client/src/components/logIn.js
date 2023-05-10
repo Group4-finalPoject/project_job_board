@@ -7,19 +7,20 @@ import { useNavigate } from 'react-router-dom';
 
 
 function LogIn() {
+  const navigate = useNavigate();
 
   return (
     <>
-      <div className=''>
-        <Card>
+      <div className='loginCardBody'>
+        <Card className='loginCardStyles'>
           <h1 className='mainCard2'>
               Log in!
           </h1>
           <LoginForm/>
           <Card className='btnCard'>
               <section className='main1'>
-                <Button variant="success"className='signUpBtn' >
-                  Go Premium !
+                <Button variant="dark"className='signUpBtn' >
+                  Go Premium
                 </Button>{''}
               </section>
             </Card>
