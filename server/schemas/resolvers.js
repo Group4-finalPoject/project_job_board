@@ -29,7 +29,7 @@ const resolvers = {
   Mutation: {
     addUser: async (parent, { username, email, password }) => {
       const user = await User.create({ _id: new mongoose.Types.ObjectId(),username, email, password });
-      await user.save
+      await user.save();
       const token = signToken(user, "user");
       return { token, user };
     },
@@ -88,3 +88,4 @@ const resolvers = {
 
 
 module.exports = resolvers;
+

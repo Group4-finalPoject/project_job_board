@@ -176,11 +176,12 @@ margin: 10px;
   margin-right: 5px;
   color: white;
 }
-.nav-link:hover, .navbar-brand:hover{
-  color: rgb(14, 109, 232);
+.nav-link:hover, .navbar-brand:hover, .navbar-brand-hover-color{
+  color: rgb(14, 109, 232) !important;
 }
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link, a:visited {
-  color: gray ;
+.navbar-nav .nav-link.active, .navbar-nav .show, .nav-link, a:visited, .navbar-brand-hover-color{
+
+  color: gray !important;
 }
 
 
@@ -198,7 +199,7 @@ margin: 10px;
 /* JOB POST */
 .jobPost{
   background-color: white;
-  height: ;
+  height:
 }
 .postDiv{
   display: flex;
@@ -213,7 +214,7 @@ margin: 10px;
   justify-content: center;
   border: 1px solid black;
   border-radius: 15px;
-  margin: 5px;
+  margin: 50px;
   box-shadow:  1px 1px 8px rgb(86, 86, 86);
 
 }
