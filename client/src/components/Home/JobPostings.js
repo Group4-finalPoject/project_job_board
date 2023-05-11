@@ -3,7 +3,7 @@ import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
-import JobApplication from '../Home/Application';
+import JobApplication from '../forms/Application';
 
 
 
