@@ -10,7 +10,7 @@ function LogIn() {
   const navigate = useNavigate();
 
   return (
-    <>
+    <div className='backgroundBody'>
       <div className='loginCardBody'>
         <Card className='loginCardStyles'>
           <h1 className='mainCard2'>
@@ -27,7 +27,7 @@ function LogIn() {
         </Card>
         
       </div>
-    </>
+    </div>
   );
 }
 
