@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 import LogIn from './logIn'
 import SignUp from './signup';
 import { useNavigate } from 'react-router-dom';
-import { motion } from "framer-motion"
 
 function LogOrSignUp() {
   const [showLogin, setShowLogin] = useState(false);

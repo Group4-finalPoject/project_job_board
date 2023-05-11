@@ -11,7 +11,7 @@ function SignUp() {
   const navigate = useNavigate();
 
   return (
-    <>
+    <div className='backgroundBody'>
       <div className='signupCardBody'>
         <Card className='signupCardStyles '>
           <h1 className='mainCard2'>
@@ -31,7 +31,7 @@ function SignUp() {
         </Card>
         
       </div>
-    </>
+    </div>
   );
 }
 
