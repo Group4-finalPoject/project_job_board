@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { gql } from '@apollo/client';
 import { useQuery } from '@apollo/client';
 import { useNavigate } from 'react-router-dom';
+import Auth from '../../../utils/auth';
 
 
 
@@ -80,9 +81,9 @@ function Navigation() {
                 Premium Subscription
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item onClick={()=>Auth.logout()}>
                 Sign out
-              </NavDropdown.Item>
+              </NavDropdown.Item> 
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

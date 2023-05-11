@@ -35,7 +35,7 @@ class AuthService {
   login(idToken) {
     // Saves user token to sessionStorage
     sessionStorage.setItem('id_token', idToken);
-    window.location.assign('/');
+    window.location.assign('/home');
   }
 
   logout() {
@@ -44,6 +44,6 @@ class AuthService {
     // this will reload the page and reset the state of the application
     window.location.assign('/');
   }
-}
+};
 
 export default new AuthService();
