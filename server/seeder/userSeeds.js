@@ -15,19 +15,19 @@ mongoose.connect('mongodb://localhost:27017/job-db', { useNewUrlParser: true })
 
 const seedUsers = [
   {
-    username: 'user1',
+   
     password: 'password1',
     email: 'user1@example.com',
     dateJoined: new Date('2022-01-01'),
   },
   {
-    username: 'user2',
+    
     password: 'password2',
     email: 'user2@example.com',
     dateJoined: new Date('2022-01-02'),
   },
   {
-    username: 'user3',
+    
     password: 'password3',
     email: 'user3@example.com',
     dateJoined: new Date('2022-01-03'),
