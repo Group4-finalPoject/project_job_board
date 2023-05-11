@@ -29,8 +29,9 @@ function CustomToggle({ children, eventKey }) {
   return (
     <button
       type="button"
-      style={{ backgroundColor: 'pink' }}
+      style={{ backgroundColor: 'green' }}
       onClick={decoratedOnClick}
+      className='applybtn'
     >
       {children}
     </button>
