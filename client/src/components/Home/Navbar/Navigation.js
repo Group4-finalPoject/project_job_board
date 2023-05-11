@@ -4,6 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { gql } from '@apollo/client';
 import { useQuery } from '@apollo/client';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const GET_APPLIED_JOBS = gql`
@@ -52,7 +54,13 @@ function AppliedJobs({ userId }) {
   );
 }
 
+
 function Navigation() {
+  const navigate = useNavigate();
+  const handleMyApps = () => {
+  navigate('/MyApplications')
+}
+
   return (
     <Navbar bg="dark" expand="lg">
       <Container className='TESTER'>
@@ -62,7 +70,7 @@ function Navigation() {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Profile</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">My Applications</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1" onClick={()=> handleMyApps()}>My Applications</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Saved Jobs
               </NavDropdown.Item>

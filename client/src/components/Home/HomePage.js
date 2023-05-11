@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from './Navbar/Navigation';
 import Card from 'react-bootstrap/Card';
 // import JobPostings from './jobPostings'
-import JobPostings from '../forms/JobPostings';
+import JobPostings from './JobPostings';
 
 // import { useState } from 'react';
 

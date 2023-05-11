@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home/HomePage';
 import LogIn from './components/logIn';
 import SignUp from './components/signup';
+import MyApplications from './components/MyApplications/MyApplications'
 import {
   ApolloClient,
   InMemoryCache,
@@ -20,6 +21,7 @@ function App() {
     <Route path='/home' element={<Home/>}/>
     <Route path='/login' element={<LogIn/>}/>
     <Route path='/signup' element={<SignUp/>}/>
+    <Route path= '/MyApplications' element={<MyApplications/>}/>
 
   </Routes>;
 
