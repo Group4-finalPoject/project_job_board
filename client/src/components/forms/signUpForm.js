@@ -2,7 +2,6 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
-import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../../utils/mutations';
 import Auth from '../../utils/auth';
@@ -10,13 +9,13 @@ import Auth from '../../utils/auth';
 
 function SignUpForm() {
 
-  const navigate = useNavigate();
+
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [addUser, { error, data }] = useMutation(ADD_USER);
 
-  const handleFormSubmit = async (e) => {
+  const handleSignedUp = async (e) => {
     e.preventDefault();
 
     try {
@@ -35,16 +34,13 @@ function SignUpForm() {
     setPassword('');
 
   }
-  const handleSignedUp = () => {
-    navigate('/Home')
-  }
-
+ 
   return (
     <div>
       <Form.Text className="text-muted">
 
         </Form.Text>
-       <Form className='signUpForm' onSubmit={handleFormSubmit} >
+       <Form className='signUpForm' >
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" 
@@ -71,7 +67,7 @@ function SignUpForm() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Subscribe to email updates?" />
       </Form.Group>
-      <Button variant="primary" type="submit" onClick={() => handleSignedUp()}>
+      <Button variant="primary" type="submit" onClick= {handleSignedUp}>
         Register
       </Button>
     </Form>

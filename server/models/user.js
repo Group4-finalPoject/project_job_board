@@ -3,12 +3,6 @@ const bcrypt = require('bcrypt');
 
 const userSchema = new mongoose.Schema({
     _id: mongoose.Types.ObjectId, // add an ID field to the schema
-    username: {
-        type: String,
-        required: true,
-        unique: true,
-        trim: true,
-    },
     password: {
         type: String,
         required: true,

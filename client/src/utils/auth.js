@@ -35,7 +35,7 @@ class AuthService {
   login(idToken) {
     // Saves user token to sessionStorage
     sessionStorage.setItem('id_token', idToken);
-    window.location.assign('/');
+    window.location.assign('/home');
   }
 
   logout() {
