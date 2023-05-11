@@ -34,12 +34,12 @@ function AppliedJobs({ userId }) {
     return <p>Error: {error.message}</p>;
   }
 
-  const { username, appliedJobs } = data.user;
+  const { username, AppliedJobs } = data.user;
 
   return (
     <NavDropdown title="Saved Applications" id="basic-nav-dropdown">
       <NavDropdown.Item disabled>User: {username}</NavDropdown.Item>
-      {appliedJobs.map((job) => (
+      {AppliedJobs.map((job) => (
         <NavDropdown.Item key={job.jobId}>
           Name: {job.name}
           <br />
