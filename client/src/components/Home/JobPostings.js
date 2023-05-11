@@ -51,8 +51,10 @@ function JobPostings() {
             <Card.Body>
               <Card.Title>{job.title}</Card.Title>
               <Card.Text>
-                Salary: {job.salary}
-                {job.description}
+                Salary: ${job.salary}
+                <p>{job.description}</p>
+
+                
               </Card.Text>
 
               <Card.Header className='detailsExpandButton'>
