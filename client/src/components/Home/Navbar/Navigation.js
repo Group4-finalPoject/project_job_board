@@ -63,7 +63,10 @@ function Navigation() {
   }
   const handleHome = () => {
     navigate('/Home')
-    }
+  }
+  // const handleHome = () => {
+  //   navigate('/Home')
+  // }
 
   return (
     <Navbar bg="dark" expand="lg">
@@ -71,7 +74,7 @@ function Navigation() {
         <Navbar.Brand onClick={()=> handleHome()} className='gitJobs'>GitJobs</Navbar.Brand>
         <Navbar.Collapse className='d-flex ' id="basic-navbar-nav d-flex ">
           <Nav className="navBtns">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link onClick={()=> handleHome()}>Home</Nav.Link>
             <Nav.Link href="#link">Profile</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1" onClick={()=> handleMyApps()}>My Applications</NavDropdown.Item>
