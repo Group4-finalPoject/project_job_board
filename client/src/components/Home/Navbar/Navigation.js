@@ -64,10 +64,6 @@ function Navigation() {
   const handleHome = () => {
     navigate('/Home')
   }
-  // const handleHome = () => {
-  //   navigate('/Home')
-  // }
-
   return (
     <Navbar bg="dark" expand="lg">
       <Container className='TESTER'>
@@ -78,11 +74,6 @@ function Navigation() {
             <Nav.Link href="#link">Profile</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1" onClick={()=> handleMyApps()}>My Applications</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Saved Jobs
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Resume Tool</NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Premium Subscription
               </NavDropdown.Item>
