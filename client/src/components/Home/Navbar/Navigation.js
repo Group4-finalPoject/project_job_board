@@ -60,12 +60,15 @@ function Navigation() {
   const navigate = useNavigate();
   const handleMyApps = () => {
   navigate('/MyApplications')
-}
+  }
+  const handleHome = () => {
+    navigate('/Home')
+    }
 
   return (
     <Navbar bg="dark" expand="lg">
       <Container className='TESTER'>
-        <Navbar.Brand href="#home" className='gitJobs'>GitJobs</Navbar.Brand>
+        <Navbar.Brand onClick={()=> handleHome()} className='gitJobs'>GitJobs</Navbar.Brand>
         <Navbar.Collapse className='d-flex ' id="basic-navbar-nav d-flex ">
           <Nav className="navBtns">
             <Nav.Link href="#home">Home</Nav.Link>
