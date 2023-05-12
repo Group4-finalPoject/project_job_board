@@ -7,7 +7,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
-    "build-production": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i --legacy-peer-deps && cd ../client && npm i --legacy-peer-deps",
     "build": "cd client && npm run build"
   },
