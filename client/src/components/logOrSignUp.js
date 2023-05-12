@@ -23,7 +23,7 @@ function LogOrSignUp() {
   }
 
   return (
-    < >
+    <>
       <div className='backgroundBody'>
 
         {showLogin ?

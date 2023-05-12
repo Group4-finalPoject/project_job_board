@@ -2,58 +2,58 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { gql } from '@apollo/client';
-import { useQuery } from '@apollo/client';
+// import { gql } from '@apollo/client';
+// import { useQuery } from '@apollo/client';
 import { useNavigate } from 'react-router-dom';
 import Auth from '../../../utils/auth';
 
 
 
-const GET_APPLIED_JOBS = gql`
-  query GetUserAppliedJobs($userId: ID!) {
-    user(id: $userId) {
-      id
-      username
-      appliedJobs {
-        jobId
-        salary
-        name
-        company
-      }
-    }
-  }
-`;
+// const GET_APPLIED_JOBS = gql`
+//   query GetUserAppliedJobs($userId: ID!) {
+//     user(id: $userId) {
+//       id
+//       username
+//       appliedJobs {
+//         jobId
+//         salary
+//         name
+//         company
+//       }
+//     }
+//   }
+// `;
 
-function AppliedJobs({ userId }) {
-  const { loading, error, data } = useQuery(GET_APPLIED_JOBS, {
-    variables: { userId },
-  });
+// function AppliedJobs({ userId }) {
+//   const { loading, error, data } = useQuery(GET_APPLIED_JOBS, {
+//     variables: { userId },
+//   });
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
+//   if (loading) {
+//     return <p>Loading...</p>;
+//   }
 
-  if (error) {
-    return <p>Error: {error.message}</p>;
-  }
+//   if (error) {
+//     return <p>Error: {error.message}</p>;
+//   }
 
-  const { username, AppliedJobs } = data.user;
+//   const { username, AppliedJobs } = data.user;
 
-  return (
-    <NavDropdown title="Saved Applications" id="basic-nav-dropdown">
-      <NavDropdown.Item disabled>User: {username}</NavDropdown.Item>
-      {AppliedJobs.map((job) => (
-        <NavDropdown.Item key={job.jobId}>
-          Name: {job.name}
-          <br />
-          Company: {job.company}
-          <br />
-          Salary: {job.salary}
-        </NavDropdown.Item>
-      ))}
-    </NavDropdown>
-  );
-}
+//   return (
+//     <NavDropdown title="Saved Applications" id="basic-nav-dropdown">
+//       <NavDropdown.Item disabled>User: {username}</NavDropdown.Item>
+//       {AppliedJobs.map((job) => (
+//         <NavDropdown.Item key={job.jobId}>
+//           Name: {job.name}
+//           <br />
+//           Company: {job.company}
+//           <br />
+//           Salary: {job.salary}
+//         </NavDropdown.Item>
+//       ))}
+//     </NavDropdown>
+//   );
+// }
 
 
 function Navigation() {
