@@ -44,7 +44,7 @@ function JobApplication() {
       </InputGroup>
 
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="All my information is accurate and can be validated at inteview." />
+        <Form.Check type="checkbox" label="All my information is accurate and can be validated at interview." />
       </Form.Group>
       <Button variant="primary" type="submit">
         Submit

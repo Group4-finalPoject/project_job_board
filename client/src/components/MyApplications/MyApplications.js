@@ -30,6 +30,10 @@ function MyApplications(){
                 </div>
                 </Card>
             </div>
+            
+
+
+
         </>
     );
 }
