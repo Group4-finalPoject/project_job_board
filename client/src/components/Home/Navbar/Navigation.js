@@ -71,9 +71,8 @@ function Navigation() {
         <Navbar.Collapse className='d-flex ' id="basic-navbar-nav d-flex ">
           <Nav className="navBtns">
             <Nav.Link onClick={()=> handleHome()}>Home</Nav.Link>
-            <Nav.Link href="#link">Profile</Nav.Link>
+            <Nav.Link onClick={()=> handleMyApps()}>My Applications</Nav.Link>
             <NavDropdown title="More" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1" onClick={()=> handleMyApps()}>My Applications</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">
                 Premium Subscription
               </NavDropdown.Item>
