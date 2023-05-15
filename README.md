@@ -1,5 +1,6 @@
 # GitJobs
 
+<<<<<<< HEAD
 ## Description
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
@@ -53,3 +54,6 @@ https://github.com/Arms-like-trees
 GitHub Repo: https://github.com/Group4-finalPoject/project_job_board
 
 Deployed Application: 
+=======
+stuff more
+>>>>>>> 3869fd11026e940ed91221b3abaddfe52de96a06
