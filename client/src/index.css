@@ -35,7 +35,7 @@ background-color: rgb(0, 0, 0);
   align-items: center;
   border-radius: 20px;
   width: 40%;
-  box-shadow:  5px 5px 30px rgb(86, 86, 86);
+  box-shadow:  1px 1px 15px 1px rgb(86, 86, 86);
   background: none;
   border-radius: 20px;
   height: auto;
@@ -215,7 +215,7 @@ margin: 10px;
   border: 1px solid black;
   border-radius: 15px;
   margin: 50px;
-  box-shadow:  1px 1px 8px rgb(86, 86, 86);
+  box-shadow:  1px 1px  2px rgb(86, 86, 86);
 
 }
 
@@ -224,6 +224,18 @@ margin: 10px;
   border-color: white;
   display: flex;
   justify-content: center;
+}
+
+.applybtn{
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: all .1s ease-in-out;
+  color: white;
+  box-shadow:  1px 1px 1px rgb(86, 86, 86);
+
+}
+.applybtn:hover{
+  transform: scale(1.050);
 }
 
 

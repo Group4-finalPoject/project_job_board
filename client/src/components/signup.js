@@ -7,8 +7,10 @@ import { useNavigate } from 'react-router-dom';
 
 
 function SignUp() {
-  // const text = 'some text';
   const navigate = useNavigate();
+ const handleLogInScreen = () => {
+    navigate('/login')
+  }
 
   return (
     <div className='backgroundBody'>
@@ -20,11 +22,11 @@ function SignUp() {
           <SignUpForm/>
           {/* <Card className='btnCard'> */}
               <section className='main1'>
-                <Button variant="success" className='loginBtn' >
-                  assign
+                <Button variant="success" className='loginBtn'onClick={() => handleLogInScreen() } >
+                  login
                 </Button>{''}
-                <Button variant="success"className='signUpBtn' >
-                  assign
+                <Button variant="success"className='signUpBtn' onClick={() => handleLogInScreen() }>
+                  Back
                 </Button>{''}
               </section>
             {/* </Card> */}

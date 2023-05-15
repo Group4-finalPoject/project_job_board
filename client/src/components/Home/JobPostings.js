@@ -1,7 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import React from 'react';
 import JobApplication from '../forms/Application';
 import { useQuery, gql } from '@apollo/client';
@@ -29,8 +29,9 @@ function CustomToggle({ children, eventKey }) {
   return (
     <button
       type="button"
-      style={{ backgroundColor: 'pink' }}
+      style={{ backgroundColor: 'green' }}
       onClick={decoratedOnClick}
+      className='applybtn'
     >
       {children}
     </button>

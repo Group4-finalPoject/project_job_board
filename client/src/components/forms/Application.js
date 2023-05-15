@@ -15,7 +15,7 @@ function JobApplication() {
         {/* Phone number */}
         <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Phone Number</Form.Label>
-        <Form.Control type="password" placeholder="(xxx)-xxx-xxxx" />
+        <Form.Control type="text" placeholder="(xxx)-xxx-xxxx" />
       </Form.Group>
       {/* first name */}
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -34,7 +34,7 @@ function JobApplication() {
       {/* DOB */}
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>D.O.B</Form.Label>
-        <Form.Control type="password" placeholder="mm/dd/yy" />
+        <Form.Control type="text" placeholder="mm/dd/yy" />
       </Form.Group>
         {/*  salary */}
         <InputGroup className="mb-3">
