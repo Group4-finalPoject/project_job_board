@@ -1,16 +1,17 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 const Job = require('./models/job');
 const User = require('./models/user');
 const Application = require('./models/application');
+const connection = require('./config/connection');
+// mongoose.set('strictQuery', false);
 
-mongoose.set('strictQuery', false);
+// // Connect to the database
+// mongoose.connect('mongodb://localhost:27017/job-db', { useNewUrlParser: true })
+//     .then(() => console.log('Connected to MongoDB...'))
+//     .catch((err) => console.error('Could not connect to MongoDB...', err));
 
-// Connect to the database
-mongoose.connect('mongodb://localhost:27017/job-db', { useNewUrlParser: true })
-    .then(() => console.log('Connected to MongoDB...'))
-    .catch((err) => console.error('Could not connect to MongoDB...', err));
-
-// Seed data for Jobs
+// // Seed data for Jobs
 const jobSeedData = [
    {
             _id: mongoose.Types.ObjectId(),
