@@ -1,6 +1,6 @@
 import React from 'react';
 import LogOrSignUp from './components/logOrSignUp';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/HomePage';
 import LogIn from './components/logIn';
 import SignUp from './components/signup';
@@ -10,7 +10,9 @@ import MyApplications from './components/MyApplications/MyApplications'
 
 function App() {
 
-  return <Routes>
+  return (
+  <Router>
+  <Routes>
     <Route path='/' element={<LogOrSignUp />} />
     <Route path='/home' element={
       <ProtectedRoute>
@@ -22,7 +24,8 @@ function App() {
 
 
   </Routes>;
-
+  </Router>
+  )
 }
 
 export default App;

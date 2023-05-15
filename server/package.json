@@ -1,6 +1,8 @@
 {
     "name": "mern-server",
     "version": "1.0.0",
+    "engines": {
+        "node": "16.18.1"},
     "description": "",
     "main": "server.js",
     "scripts": {
