@@ -45,7 +45,7 @@ function JobPostings() {
   if (error) return <p>Error: {error.message}</p>;
 
   return (
-    <Accordion defaultActiveKey="0">
+    <Accordion className='postContainer' defaultActiveKey="0">
       {data.jobs.map((job) => (
         <div key={job.id} className='singlePost'>
           <Card className='jobPostCard' style={{ width: '18rem', margin: '15px' }}>

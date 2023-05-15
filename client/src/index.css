@@ -237,6 +237,9 @@ margin: 10px;
 .applybtn:hover{
   transform: scale(1.050);
 }
+.postContainer{
+  margin-bottom: 15px;
+}
 
 
 
