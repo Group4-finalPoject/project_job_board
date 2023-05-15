@@ -15,9 +15,10 @@ function App() {
   <Routes>
     <Route path='/' element={<LogOrSignUp />} />
     <Route path='/home' element={
-      <ProtectedRoute>
+      // <ProtectedRoute>
         <Home />
-      </ProtectedRoute>} />
+      /* </ProtectedRoute> */
+    }/>
     <Route path='/login' element={<LogIn />} />
     <Route path='/signup' element={<SignUp />} />
     <Route path='/MyApplications' element={<MyApplications />} />
